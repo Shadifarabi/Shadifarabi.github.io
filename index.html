@@ -3,149 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shadi Farabi Maleki - Academic Resume</title>
-    <!-- Add Bootstrap CSS link -->
+    <meta name="description" content="Academic Resume">
+    <title>Shadi Farabi - Academic Resume</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+                font-size: 12pt;
+                background-color: white;
+            }
         }
+
+        @media screen {
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f8f9fa;
+                padding: 20px;
+            }
+        }
+
         .resume-header {
-            background-color: #007BFF;
-            color: #fff;
             text-align: center;
-            padding: 50px 0;
-            margin-top: 15px;
-            border-radius: 10px;
-        }
-        .resume-section {
+            padding: 10px;
             margin-bottom: 30px;
         }
-        .resume-section h2 {
-            color: #007BFF;
+
+        .resume-header h1 {
+            margin-bottom: 5px;
+            font-size: 26px;
+            color: #333;
         }
-        .education-item {
-            border-left: 2px solid #007BFF;
-            padding-left: 20px;
+
+        .resume-header p {
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .resume-section {
             margin-bottom: 20px;
         }
-        .interests-list {
-            list-style-type: circle;
-            margin-left: 20px;
+
+        .resume-section h2 {
+            font-size: 18px;
+            color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
-        .courses-list {
-            list-style-type: square;
-            margin-left: 20px;
+
+        .section-content p, .section-content ul {
+            font-size: 14px;
+            color: #333;
         }
-        .experiences-list {
-            list-style-type: disc;
-            margin-left: 20px;
+
+        .education-item, .experience-item {
+            margin-bottom: 10px;
+        }
+
+        .education-item h3, .experience-item h3 {
+            font-size: 16px;
+            color: #007BFF;
+            margin-bottom: 5px;
+        }
+
+        .education-item p, .experience-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        body, html {
+            height: 100%;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="resume-header">
-                <h1>Shadi Farabi Maleki</h1>
-                <p>Doctor of Medicine</p>
-                <p>Birth: June 28, 1997</p>
-                <p>Address: Golgasht, Tabriz, East Azerbaijan, Iran</p>
-                <p>Email: shadfa8@gmail.com</p>
-            </div>
+    <!-- Resume Header -->
+    <div class="resume-header">
+        <h1>Dr. Shadi Farabi Maleki</h1>
+        <p>Doctor of Medicine, Neuroscience & Artificial Intelligence Researcher</p>
+        <p class="contact-info">
+            Birth: June 28, 1997 | Golgasht, Tabriz, East Azerbaijan, Iran <br>
+            Email: <a href="mailto:shadifarabi1997@gmail.com">shadifarabi1997@gmail.com</a>
+        </p>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="resume-section">
+        <h2>About Me</h2>
+        <p class="section-content">
+            I am Dr. Shadi Farabi Maleki, a medical doctor with a robust background in laboratory and clinical research. My scholarly interests are anchored in ophthalmology and visual science, with a strong emphasis on integrating artificial intelligence methodologies for enhancing diagnostic and therapeutic approaches in neurodegenerative diseases. My academic pursuits leverage AI in ophthalmic imaging, visual disorders, and neuroimaging, complemented by substantial experience in bioinformatics and early disease detection within clinical settings, particularly focusing on autism spectrum disorders.
+        </p>
+    </div>
+
+    <!-- Education Section -->
+    <div class="resume-section">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Doctor of Medicine</h3>
+            <p>Tabriz University of Medical Sciences, Iran (2016-2023)</p>
+            <p>Thesis: Effects of Donepezil on Language and Executive Skills in Autism Spectrum Disorder</p>
+        </div>
+        <div class="education-item">
+            <h3>Diploma in Empirical Sciences</h3>
+            <p>Dokhtarane Ali High School (2015)</p>
+            <p>GPA: 19.44/20</p>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="resume-section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Doctor of Medicine</h3>
-                    <p>Tabriz University of Medical Science, Tabriz, Iran</p>
-                    <p>2016-2023</p>
-                    <p>Thesis: The effects of donepezil on clinical symptoms, language, and executive skills in individuals with autism spectrum disorder (ASD); A systematic review</p>
-                    <p>GPA: 17.48/20</p>
-                </div>
-                <div class="education-item">
-                    <h3>Diploma in Empirical Science</h3>
-                    <p>Dokhtarane Ali</p>
-                    <p>2015</p>
-                    <p>GPA: 19.44/20</p>
-                </div>
-            </div>
+    <!-- Research Interests Section -->
+    <div class="resume-section">
+        <h2>Research Interests</h2>
+        <ul class="section-content">
+            <li>Ophthalmology & Visual Science</li>
+            <li>Neuroscience</li>
+            <li>Bioinformatics</li>
+            <li>Artificial Intelligence</li>
+            <li>Cancer Research</li>
+        </ul>
+    </div>
+
+    <!-- Courses Section -->
+    <div class="resume-section">
+        <h2>Selected Courses</h2>
+        <ul class="section-content">
+            <li>Visual Science and Ophthalmology Techniques</li>
+            <li>Artificial Intelligence, CNN, and Computer Vision</li>
+            <li>Advanced Bioinformatics (19/20)</li>
+            <li>NGS Data Analysis (19/20)</li>
+            <li>Python Programming (20/20)</li>
+            <li>Primer Design (18/20)</li>
+            <li>PCR Techniques (19/20)</li>
+            <li>Protein Design and Primer Design Workshop</li>
+        </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="resume-section">
+        <h2>Skills</h2>
+        <ul class="section-content">
+            <li>Statistical Analysis Tools (SPSS, STATA)</li>
+            <li>Programming in R and Python</li>
+        </ul>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="resume-section">
+        <h2>Academic Experiences</h2>
+        <div class="experience-item">
+            <h3>AI-Based Prognosis Prediction in Idiopathic Intracranial Hypertension (IIH) Patients Post-Optic Nerve Sheath Fenestration (ONSF) Surgery</h3>
+            <p>Developed AI-driven prognostic models for evaluating long-term outcomes in IIH patients following ONSF surgical intervention.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Laboratory Research Involving Mice and Rats: Microsurgery and Injections</h3>
+            <p>Conducted rigorous laboratory research utilizing animal models (mice and rats) with a focus on microsurgical techniques and precise administration of injections.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Researcher in Machine Learning for Stroke Prediction</h3>
+            <p>Engaged in developing AI-based predictive models for the early detection of cerebrovascular accidents.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Comparison of Gabapentin and Cinnarizine for Tinnitus Treatment</h3>
+            <p>Performed clinical research evaluating the efficacy of Gabapentin versus Cinnarizine in patients suffering from Sensorineural Hearing Loss.</p>
+        </div>
+        <div class="experience-item">
+            <h3>AI in Multiple Sclerosis Management</h3>
+            <p>Utilized retinal imaging to enhance diagnostic and therapeutic strategies for multiple sclerosis management.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Internship in Immunology Center, Tabriz University of Medical Sciences</h3>
+            <p>Completed a 3-month internship focusing on immunological research and clinical immunology applications.</p>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12">
-            <div class="resume-section">
-                <h2>Research Interests</h2>
-                <ul class="interests-list">
-                    <li>Neuroscience</li>
-                    <li>Ophthalmology</li>
-                    <li>Bioinformatics</li>
-                    <li>Machine learning</li>
-                    <li>Cancer</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="resume-section">
-                <h2>Selected Courses</h2>
-                <ul class="courses-list">
-                    <li>Advanced Bioinformatics (19/20)</li>
-                    <li>NGS (Next Generations Sequencing) Data Analyzing (19/20)</li>
-                    <li>Python (20/20)</li>
-                    <li>Primer Designing (18/20)</li>
-                    <li>PCR (Polymerase Chain Reaction) (19/20)</li>
-                    <li>Ethics in Animal Studies (20/20)</li>
-                    <li>Rat and Mice Injections (IV, SC, IP, ID) (20/20)</li>
-                    <li>Induced Stroke and Stereotaxis in Animal Models (19/20)</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="resume-section">
-                <h2>Academic Experiences</h2>
-                <ul class="courses-list">
-                    <li>Brain stroke prediction using machine learning and deep learning</li>
-                    <li>Comparing Gabapentin and Cinnarizine effect on tinnitus in patients with Sensorineural Hearing Loss</li>
-                    <li>AI-based methods in the multiple sclerosis (MS) disease</li>
-                    <li>Designing equipment to improve cognitive performance (QR-based) in people with Alzheimer's disease</li>
-                    <li>Current and future role of artificial intelligence in retinopathy of prematurity (ROP)</li>
-                    <li>HLA-Allele distribution studies in the various areas of Iran</li>
-                    <li>Methanol-induced optic neuropathy (MION) and the new management</li>
-                    <li>Clinical impressions of autism spectrum disorder (ASD) </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="resume-section">
-                <h2>Publications</h2>
-                <ul class="courses-list">
-                  <li>Draft [1] Fariba Bahrami, Milad Yousefi, Shadi Farabi "An Investigation into Fuzzy Modeling Techniques for Input Current Conversion in LIF Neuron Models"</li>
-                  <li>Submitted [2] Sima Shahmohammadi-Farid, Milad Yousefi, Shadi Farabi, Leyla Mandalo "HLA distribution of Azeri and Kurd ethnic groups: 6 years investigation of Northwest Iran</li>
-                  <li>Submitted [3] Chee Peng Lim, Shadi Farabi, Milad Yousefi “Artificial Intelligence for Multiple Sclerosis Management Using Retinal Images: Pearl, Peaks, and Pitfalls”</li>
-                  <li>Accepted [4] Shahrokh Amiri, Shadi Farabi Maleki, Leila Mandaloo “ The effects of donepezil on clinical symptoms, language, and executive skills in individuals with autism spectrum disorder (ASD); A systematic review”</li>
-                </ul>
-            </div>
-        </div>
+    <!-- Publications Section -->
+    <div class="resume-section">
+        <h2>Publications</h2>
+        <ul class="section-content">
+            <li>“Artificial Intelligence for Multiple Sclerosis Management Using Retinal Images: Pearl, Peaks, and Pitfalls.”</li>
+            <li>“Current and Future Roles of AI in Retinopathy of Prematurity.”</li>
+            <li>“Advancements in Radiomics and AI for Thyroid Cancer Diagnosis.”</li>
+            <li>“AI in Eye Movements Analysis for Alzheimer’s Early Diagnosis.”</li>
+            <li>“AI in Eye Movements for Alzheimer’s Diagnosis.”</li>
+            <li>“Role of AI in Ocular Tumors: A Systematic Review.”</li>
+            <li>“Effects of Donepezil on Clinical Symptoms in Autism Spectrum Disorder: A Systematic Review.”</li>
+        </ul>
+        <p>For a comprehensive list of my publications, please visit my <a href="https://scholar.google.com/citations?user=ES7MZBQAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
     </div>
 </div>
 
 <!-- Add Bootstrap JS scripts if needed -->
-
 </body>
 </html>
