@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Academic Resume">
-    <title>Shadi Farabi - Academic Resume</title>
+    <title>Dr. Shadi Farabi Maleki - Academic Resume</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         @media print {
@@ -28,28 +28,35 @@
 
         .resume-header {
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             margin-bottom: 30px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 10px;
         }
 
         .resume-header h1 {
-            margin-bottom: 5px;
-            font-size: 26px;
-            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: bold;
         }
 
         .resume-header p {
             margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .resume-header .contact-info {
             font-size: 14px;
-            color: #555;
+            margin-top: 10px;
         }
 
         .resume-section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .resume-section h2 {
-            font-size: 18px;
+            font-size: 20px;
             color: #007BFF;
             border-bottom: 2px solid #007BFF;
             padding-bottom: 5px;
@@ -59,10 +66,11 @@
         .section-content p, .section-content ul {
             font-size: 14px;
             color: #333;
+            line-height: 1.6;
         }
 
-        .education-item, .experience-item {
-            margin-bottom: 10px;
+        .education-item, .experience-item, .publication-item {
+            margin-bottom: 15px;
         }
 
         .education-item h3, .experience-item h3 {
@@ -76,13 +84,34 @@
             color: #555;
         }
 
-        .contact-info {
-            font-size: 14px;
-            margin-top: 10px;
+        .skills-list, .research-interests-list {
+            columns: 2;
+            -webkit-columns: 2;
+            -moz-columns: 2;
         }
 
-        body, html {
-            height: 100%;
+        .skills-list li, .research-interests-list li {
+            margin-bottom: 5px;
+        }
+
+        .honors-list li {
+            margin-bottom: 10px;
+        }
+
+        .contact-references {
+            margin-top: 20px;
+        }
+
+        .contact-references h3 {
+            font-size: 16px;
+            color: #007BFF;
+            margin-bottom: 10px;
+        }
+
+        .contact-references p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -92,10 +121,10 @@
     <!-- Resume Header -->
     <div class="resume-header">
         <h1>Dr. Shadi Farabi Maleki</h1>
-        <p>Doctor of Medicine, Ophthalmology  & Artificial Intelligence Researcher</p>
+        <p>Doctor of Medicine, Ophthalmology & Biomedical Researcher</p>
         <p class="contact-info">
             Birth: June 28, 1997 | Golgasht, Tabriz, East Azerbaijan, Iran <br>
-            Email: <a href="mailto:shadifarabi1997@gmail.com">shadifarabi1997@gmail.com</a>
+            Email: <a href="mailto:shadifarabi1997@gmail.com" style="color: white;">shadifarabi1997@gmail.com</a> | Tel: +00989147772874
         </p>
     </div>
 
@@ -103,7 +132,7 @@
     <div class="resume-section">
         <h2>About Me</h2>
         <p class="section-content">
-            I am Dr. Shadi Farabi Maleki, a medical doctor with a robust background in laboratory and clinical research. My scholarly interests are anchored in ophthalmology and visual science, with a strong emphasis on integrating artificial intelligence methodologies for enhancing diagnostic and therapeutic approaches in neurodegenerative diseases. My academic pursuits leverage AI in ophthalmic imaging, visual disorders, and neuroimaging, complemented by substantial experience in bioinformatics and early disease detection within clinical settings, particularly focusing on autism spectrum disorders.
+            My name is Shadi Farabi Maleki, an M.D. researcher with a strong focus on ophthalmology. I graduated from medical school in 2023 as a top student with a GPA of 17.15/20. My work bridges ophthalmology and biology (molecular, cellular, genetic) with a regenerative approach, incorporating neuroimaging and artificial intelligence in clinical and lab-based research. I have 12 months of experience as a research assistant and 13 months as a research associate, gaining expertise in lab and clinical skills, team leadership, and working with animal models (rodents), performing surgeries, injections, and biopsies.
         </p>
     </div>
 
@@ -113,11 +142,11 @@
         <div class="education-item">
             <h3>Doctor of Medicine</h3>
             <p>Tabriz University of Medical Sciences, Iran (2016-2023)</p>
-            <p>Thesis: Effects of Donepezil on Language and Executive Skills in Autism Spectrum Disorder</p>
+            <p>GPA: 17.15/20</p>
         </div>
         <div class="education-item">
             <h3>Diploma in Empirical Sciences</h3>
-            <p>Dokhtarane Ali High School (2015)</p>
+            <p>Dokhtarane Ali High School (2012-2015)</p>
             <p>GPA: 19.44/20</p>
         </div>
     </div>
@@ -125,85 +154,146 @@
     <!-- Research Interests Section -->
     <div class="resume-section">
         <h2>Research Interests</h2>
-        <ul class="section-content">
-            <li>Ophthalmology & Visual Science</li>
-            <li>Neuroscience</li>
+        <ul class="section-content research-interests-list">
+            <li>Ophthalmology</li>
+            <li>Cellular and Molecular Biology</li>
+            <li>Regenerative Ophthalmology</li>
+            <li>Immunology</li>
+            <li>Genetics</li>
             <li>Bioinformatics</li>
-            <li>Artificial Intelligence</li>
-            <li>Cancer Research</li>
+            <li>Neuro-Vision</li>
+            <li>OCT, OCTA, Imaging</li>
+            <li>Computational Biology</li>
         </ul>
     </div>
 
-    <!-- Courses Section -->
+    <!-- Selected Courses Section -->
     <div class="resume-section">
         <h2>Selected Courses</h2>
         <ul class="section-content">
-            <li>Visual Science and Ophthalmology Techniques</li>
-            <li>Artificial Intelligence, CNN, and Computer Vision</li>
-            <li>Advanced Bioinformatics (19/20)</li>
-            <li>NGS Data Analysis (19/20)</li>
-            <li>Python Programming (20/20)</li>
-            <li>Primer Design (18/20)</li>
-            <li>PCR Techniques (19/20)</li>
-            <li>Protein Design and Primer Design Workshop</li>
+            <li>Retinal and Macular Detachment and Degeneration Histopathology</li>
+            <li>Cell Culture Techniques, Transfection, Stem Cell</li>
+            <li>Gene Expression Analysis, Coding and Non-coding RNA Regulation</li>
+            <li>Artificial Intelligence, CNN, and Machine Learning</li>
+            <li>Advanced Bioinformatics</li>
+            <li>NGS Data Analysis</li>
+            <li>Python Programming</li>
+            <li>Primer and Protein Design</li>
+            <li>PCR Techniques</li>
+            <li>Ethical Approval for Animal Studies</li>
         </ul>
     </div>
 
     <!-- Skills Section -->
     <div class="resume-section">
         <h2>Skills</h2>
-        <ul class="section-content">
+        <ul class="section-content skills-list">
+            <li>Team-working capabilities, leading long-term projects, and lab management</li>
+            <li>Data gathering, data analysis, bioinformatics</li>
+            <li>Statistics, scientific paper writing, and submission process</li>
+            <li>Gene regulation, gene expression, and RNA-sequencing</li>
+            <li>Mammalian cell culture, maintenance, sub-culturing, and cryopreservation</li>
+            <li>Stem Cell, Cell viability assays (MTT), apoptosis detection via flow cytometry</li>
+            <li>Performing rat and mouse brain microsurgeries, brain sampling, and drug injection</li>
             <li>Statistical Analysis Tools (SPSS, STATA)</li>
+            <li>Lab-Animal handling, managing, and interventions</li>
             <li>Programming in R and Python</li>
+            <li>Proficient in English, Persian, Turkish, Azerbaijani</li>
         </ul>
     </div>
 
-    <!-- Experience Section -->
+    <!-- Work Experiences Section -->
+    <div class="resume-section">
+        <h2>Work Experiences</h2>
+        <div class="experience-item">
+            <h3>Research Associate</h3>
+            <p>Nikookari Eye Center, Tabriz, Iran (13 months)</p>
+            <p>Worked on projects involving AI-based fundus and OCT image processing, novel surgical methods in oculoplastic, macular aging, and retinal degeneration.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Research Assistant</h3>
+            <p>Immunology Research Center, Tabriz University of Medical Science, Iran (11-12 months)</p>
+            <p>Gained expertise in gene expression, ocular genetics, stem cell investigations, cell culture, transfection, and assays like MTT, apoptosis, and PCR.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Internship</h3>
+            <p>Neuroscience Research Center, Tabriz University of Medical Science, Iran (6 months)</p>
+            <p>Worked with rodent models, performed microsurgeries, injections, and Western blot analysis. Holds ethical approval for animal studies.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Emergency Physician</h3>
+            <p>Shohada Hospital, Showt city, Iran (16 months, ongoing)</p>
+            <p>Currently completing mandatory service as an emergency physician.</p>
+        </div>
+    </div>
+
+    <!-- Academic Experiences Section -->
     <div class="resume-section">
         <h2>Academic Experiences</h2>
-        <div class="experience-item">
-            <h3>AI-Based Prognosis Prediction in Idiopathic Intracranial Hypertension (IIH) Patients Post-Optic Nerve Sheath Fenestration (ONSF) Surgery</h3>
-            <p>Developed AI-driven prognostic models for evaluating long-term outcomes in IIH patients following ONSF surgical intervention.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Laboratory Research Involving Mice and Rats: Microsurgery and Injections</h3>
-            <p>Conducted rigorous laboratory research utilizing animal models (mice and rats) with a focus on microsurgical techniques and precise administration of injections.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Cell Culture and Related Assays (MTT, Apoptosis, Cell Cycle Analysis, etc.)</h3>
-            <p>Extensive experience in mammalian cell culture, including maintenance, sub-culturing, and cryopreservation of various cell lines. Proficient in assays such as MTT for cell viability, apoptosis, and cell cycle analysis using flow cytometry. Skilled in optimizing culture conditions, transfection protocols, and drug treatments, while ensuring sterile techniques, cell line authentication, and contamination control</p>
-        </div>
-        <div class="experience-item">
-            <h3>Researcher in Machine Learning for Stroke Prediction</h3>
-            <p>Engaged in developing AI-based predictive models for the early detection of cerebrovascular accidents.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Comparison of Gabapentin and Cinnarizine for Tinnitus Treatment</h3>
-            <p>Performed clinical research evaluating the efficacy of Gabapentin versus Cinnarizine in patients suffering from Sensorineural Hearing Loss.</p>
-        </div>
-        <div class="experience-item">
-            <h3>AI in Multiple Sclerosis Management</h3>
-            <p>Utilized retinal imaging to enhance diagnostic and therapeutic strategies for multiple sclerosis management.</p>
-        </div>
-        <div class="experience-item">
-            <h3>Internship in Immunology Center, Tabriz University of Medical Sciences</h3>
-            <p>Completed a 3-month internship focusing on immunological research and clinical immunology applications.</p>
-        </div>
+        <ul class="section-content">
+            <li>Bilateral Medial Rectus Resection for Recurrent Exotropia</li>
+            <li>Clinical Outcomes and Efficacy of Lateral Rectus Periosteal Fixation Combined with Medial Rectus Resection in Complete Third Nerve Palsy</li>
+            <li>Cell Culture and Related Assays (MTT, Apoptosis, Cell Cycle Analysis)</li>
+            <li>Machine Learning for Stroke Prediction</li>
+            <li>Multiple Sclerosis Management Using Retinal Imaging</li>
+            <li>AI Analysis of Eye Movement Data for Alzheimer Early Detection</li>
+            <li>AI-Based Prognosis Prediction in Idiopathic Intracranial Hypertension (IIH) Patients Post-Optic Nerve Sheath Fenestration (ONSF) Surgery</li>
+            <li>Strabismus (Exotropia Surgery and Drift Re-alignment)</li>
+            <li>Evaluating Role of Erythropoietin in Methanol Induced Optic Neuropathy (MION)</li>
+            <li>AI-Software for Assessing Cell Viability Percentage in Microscope Images</li>
+        </ul>
+    </div>
+
+    <!-- Honors Section -->
+    <div class="resume-section">
+        <h2>Honors</h2>
+        <ul class="section-content honors-list">
+            <li>Oral Presentation at Alavi International Aging Meeting (2019)</li>
+            <li>Graduated medical school with a GPA of 17.15/20, completing basic sciences in 4 semesters (instead of 5)</li>
+            <li>Voluntary participation in a global stroke prevention campaign (2017-2019)</li>
+            <li>Voluntary participation in COVID-19 vaccination centers (2021-2022)</li>
+            <li>Ranked 208th in the Iranian National University Entrance Exam (2015)</li>
+        </ul>
     </div>
 
     <!-- Publications Section -->
     <div class="resume-section">
         <h2>Publications</h2>
         <ul class="section-content">
-            <li>“Artificial Intelligence for Multiple Sclerosis Management Using Retinal Images: Pearl, Peaks, and Pitfalls.”</li>
-            <li>“Current and Future Roles of AI in Retinopathy of Prematurity.”</li>
-            <li>“Advancements in Radiomics and AI for Thyroid Cancer Diagnosis.”</li>
-            <li>“AI in Eye Movements Analysis for Alzheimer’s Early Diagnosis.”</li>
-            <li>“AI in Eye Movements for Alzheimer’s Diagnosis.”</li>
-            <li>“Role of AI in Ocular Tumors: A Systematic Review.”</li>
-            <li>“Effects of Donepezil on Clinical Symptoms in Autism Spectrum Disorder: A Systematic Review.”</li>
+            <li>Artificial Intelligence for Multiple Sclerosis Management Using Retinal Images: Pearl, Peaks, and Pitfalls</li>
+            <li>Therapeutic Role of Erythropoietin in Methanol Induced Optic Neuropathy: A Systematic Review</li>
+            <li>Current and Future Roles of AI in Retinopathy of Prematurity</li>
+            <li>AI in Eye Movements Analysis for Alzheimer’s Early Diagnosis</li>
+            <li>Role of AI in Ocular Tumors: A Systematic Review</li>
+            <li>Effects of Donepezil on Clinical Symptoms in Autism Spectrum Disorder: A Systematic Review</li>
+            <li>Advancements in Radiomics and AI for Thyroid Cancer Diagnosis</li>
         </ul>
-        <p>For a comprehensive list of my publications, please visit my <a href="https://scholar.google.com/citations?user=ES7MZBQAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
+        <p>For a comprehensive list, visit my <a href="https://scholar.google.com/citations?user=ES7MZBQAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.</p>
+    </div>
+
+    <!-- Contact References Section -->
+    <div class="resume-section contact-references">
+        <h2>Contact References</h2>
+        <div>
+            <h3>Professor Reza Nabie</h3>
+            <p>Professor of Ophthalmology, Nikookari Eye Center, Tabriz University of Medical Science</p>
+            <p>Email: <a href="mailto:r_nabie@yahoo.com">r_nabie@yahoo.com</a></p>
+        </div>
+        <div>
+            <h3>Dr. Leili Aghebati</h3>
+            <p>Associate Professor of Immunology, Head of Immunology Research Center, Tabriz University of Medical Science</p>
+            <p>Email: <a href="mailto:leili_aghebati_maleki@yahoo.com">leili_aghebati_maleki@yahoo.com</a></p>
+        </div>
+        <div>
+            <h3>Professor Javad Mahmoudi</h3>
+            <p>Professor of Neuroscience, Neuroscience Research Center, Tabriz University of Medical Science</p>
+            <p>Email: <a href="mailto:mahmoudi2044@yahoo.com">mahmoudi2044@yahoo.com</a></p>
+        </div>
+        <div>
+            <h3>Milad Yousefi</h3>
+            <p>Research Associate, Mathematics Department, Tabriz University</p>
+            <p>Email: <a href="mailto:miladdyousefi@gmail.com">miladdyousefi@gmail.com</a></p>
+        </div>
     </div>
 </div>
 
